@@ -1,0 +1,39 @@
+.iconed-link {
+  display: inline-flex;
+  align-items: center;
+  color: $colorSecondary;
+  font-weight: 400;
+  &_primary {
+    color: $colorPrimary;
+    text-decoration: none;
+    font-weight: 600;
+    .iconed-link__ico {
+      margin-right: 4px;
+    }
+  }
+  &__ico {
+    display: flex;
+    align-content: inherit;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  &__text {
+    font-family: $primaryFontFamily;
+    font-size: 16px;
+  }
+}
+
+.st-text {
+  font-family: $primaryFontFamily;
+  font-size: 16px;
+  color: $colorPrimary;
+  font-weight: 600;
+}
+
+.st-link {
+  font-family: $primaryFontFamily;
+  font-size: 18px;
+  font-weight: 400;
+  color: $colorSecondary;
+  text-decoration: none;
+}

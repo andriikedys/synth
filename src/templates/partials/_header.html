@@ -1,0 +1,99 @@
+<header class="st-header">
+  <div class="st-header__content">
+    <div class="st-header__close js-st-header-close">
+      {% include "partials/svg/_close.html" %}
+    </div>
+    <div class="st-header__logo">
+      <a href="/" class="st-logo">
+        <img src="img/logo.svg" alt="logo">
+      </a>
+    </div>
+    <div class="st-header__controls">
+      <div class="st-avatar simple-dropdown">
+        <div class="st-avatar__control simple-dropdown__control">
+          <div class="st-avatar__title">
+            Arthur Wood
+          </div>
+          <div class="st-avatar__photo">
+            <img src="img/avatar@2x.png" alt="avatar">
+          </div>
+          <div class="st-avatar__icon">
+            {% include "partials/svg/_arrow-down.html" %}
+          </div>
+        </div>
+        <div class="simple-dropdown__hidden">
+          <div class="simple-dropdown__body">
+            <div class="simple-dropdown__item">
+              <a href="#" class="simple-dropdown__link">
+                <div class="simple-dropdown__text">
+                  Profile
+                </div>
+                <div class="simple-dropdown__icon is-animate">
+                  {% include "partials/svg/_arrow-right.html" %}
+                </div>
+              </a>
+            </div>
+            <div class="simple-dropdown__item">
+              <a href="#" class="simple-dropdown__link">
+                <div class="simple-dropdown__text">
+                  Settings
+                </div>
+                <div class="simple-dropdown__icon is-animate">
+                  {% include "partials/svg/_arrow-right.html" %}
+                </div>
+              </a>
+            </div>
+            <div class="simple-dropdown__item">
+              <a href="#" class="simple-dropdown__link color-secondary">
+                <div class="simple-dropdown__text">
+                  Log out
+                </div>
+                <div class="simple-dropdown__icon is-animate">
+                  {% include "partials/svg/_log-out.html" %}
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="st-header__controls-btns">
+        <div class="iconed-btn">
+          {% include "partials/svg/_notifications.html" %}
+        </div>
+        <div class="iconed-btn">
+          {% include "partials/svg/_recap.html" %}
+        </div>
+        <div class="iconed-btn">
+          {% include "partials/svg/_medium.html" %}
+        </div>
+      </div>
+    </div>
+    <div class="st-header__nav">
+      <ul class="nav-menu">
+        <li class="nav-menu__item">
+          <a href="#" class="nav-menu__link is-active">
+            FEED
+          </a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#" class="nav-menu__link">
+            EXPLORE
+          </a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#" class="nav-menu__link">
+            DISCUSSIONS
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="navbar-responsive">
+    <a href="/" class="st-logo">
+      <img src="img/logo.svg" alt="logo">
+    </a>
+    <div class="navbar-responsive__btn js-navbar-responsive">
+      <img src="img/icons/menu.svg" alt="humburger">
+    </div>
+  </div>
+</header>

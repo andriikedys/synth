@@ -1,0 +1,42 @@
+.std-btn {
+  display: inline-flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 9px 23px;
+  border-radius: 3px;
+  background-color: $colorPrimary;
+  font-weight: 500;
+  transition: all .3s;
+  color: #fff;
+  user-select: none;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1.4;
+  white-space: nowrap;
+  will-change: transform, background-color;
+  &:hover,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #eb3f3f;
+  }
+  &.middle-size {
+    font-size: 16px;
+    padding: 17px 45px;
+  }
+}
+
+.iconed-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: $colorPrimary;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    color: $colorSecondary;
+  }
+}

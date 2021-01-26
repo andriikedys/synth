@@ -1,0 +1,45 @@
+.st-switch {
+  position: relative;
+  display: inline-flex;
+  &__label {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    background-color: white;
+    border: 1px solid $colorPrimary;
+    border-radius: 100px;
+    transition: all .3s;
+    cursor: pointer;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: 50%;
+      transform: translate(2px,-50%);
+      left: 0;
+      background-color: $colorTextLite;
+      border-radius: 100%;
+      transition: all .3s;
+    }
+  }
+  &__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    &:checked {
+      & ~ .st-switch__label {
+        border: 1px solid $colorSecondary;
+        background-color: $colorSecondary;
+        &:before {
+          background-color: white;
+          transform: translate(18px, -50%);
+        }
+      }
+    }
+  }
+}

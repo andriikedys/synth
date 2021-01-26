@@ -1,0 +1,34 @@
+.card-info {
+  padding: 24px;
+  background: #FFF;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  &__topline {
+    height: 24px;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-family: $secondaryFontFamily;
+    @include css-lock(24,36,320,1920);
+    color: $colorPrimary;
+    line-height: 1.5;
+    margin-bottom: 42px;
+  }
+
+  &__descr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__shared {
+    display: flex;
+    .shared-item {
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+

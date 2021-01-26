@@ -1,0 +1,55 @@
+.b-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@for $i from 0 through 12 {
+  .b-col-#{$i} {
+    position: relative;
+    flex: 0 0 calc(100% / 12 * #{$i});
+    width: calc(100% / 12 * #{$i});
+    padding: 0 10px;
+    margin-bottom: 20px;
+    &.m-b-0 {
+      margin-bottom: 0px;
+    }
+    &.m-b-40 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media all and (max-width: 1100px) {
+  @for $i from 0 through 12 {
+    .b-col-md-#{$i} {
+      flex: 0 0 calc(100% / 12 * #{$i});
+      width: calc(100% / 12 * #{$i});
+      padding: 0;
+    }
+  }
+
+  @for $i from 0 through 12 {
+    .b-order-sm-#{$i} {
+      order: #{$i};
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  @for $i from 0 through 12 {
+    .b-col-sm-#{$i} {
+      flex: 0 0 calc(100% / 12 * #{$i});
+      width: calc(100% / 12 * #{$i});
+      padding: 0 10px;
+    }
+  }
+
+  @for $i from 0 through 12 {
+    .b-order-sm-#{$i} {
+      order: #{$i};
+    }
+  }
+}

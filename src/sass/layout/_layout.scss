@@ -1,0 +1,20 @@
+.content-out {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.st-main {
+  flex: 1 0 auto;
+  padding-top: 72px;
+  background-color: $colorBg;
+}
+
+.st-container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include screenMax($mobile) {
+  	padding: 0 10px;
+  }
+}

@@ -1,0 +1,77 @@
+<div class="profile-card">
+  <div class="profile-card__content">
+    <div class="profile-card__photo">
+      <img src="img/profile-avatar@x2.png" alt="profile-avatar">
+    </div>
+    <div class="profile-card__info">
+      <div class="profile-card__title">
+        Benjamin Clementine
+      </div>
+      <div class="profile-card__subtitle">
+        @benclementine
+      </div>
+      <a href="#" class="iconed-link">
+        <span class="iconed-link__ico">
+          {% include "partials/svg/_edit.html" %}
+        </span>
+        <span class="iconed-link__text">
+          Edit Profile
+        </span>
+      </a>
+    </div>
+    <div class="profile-card__more">
+      <div class="simple-dropdown">
+        <div class="simple-dropdown__control iconed-btn">
+          {% include "partials/svg/_vertical-menu.html" %}
+        </div>
+        <div class="simple-dropdown__hidden" data-dropdown-location="left" data-dropdown-location-reverse="left">
+          <div class="simple-dropdown__body">
+            <div class="simple-dropdown__item">
+              <a href="#" class="simple-dropdown__link reverse">
+                <div class="simple-dropdown__text">
+                  Report User
+                </div>
+                <div class="simple-dropdown__icon">
+                  {% include "partials/svg/_report.html" %}
+                </div>
+              </a>
+            </div>
+            <div class="simple-dropdown__item">
+              <a href="#" class="simple-dropdown__link reverse">
+                <div class="simple-dropdown__text">
+                  Block User
+                </div>
+                <div class="simple-dropdown__icon">
+                  {% include "partials/svg/_circle-close.html" %}
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="profile-card__counts">
+    <div class="count-item">
+      <div class="count-item__value">45</div>
+      <div class="count-item__text">
+        synths
+      </div>
+    </div>
+    <div class="count-item">
+      <div class="count-item__value">110</div>
+      <div class="count-item__text">
+        followers
+      </div>
+    </div>
+    <div class="count-item">
+      <div class="count-item__value">322</div>
+      <div class="count-item__text">
+        following
+      </div>
+    </div>
+  </div>
+  <div class="profile-card__descr">
+    Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each, according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
+  </div>
+</div>

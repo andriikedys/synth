@@ -1,0 +1,67 @@
+.profile-card {
+  &__content {
+    display: flex;
+  }
+  &__photo {
+    flex: 0 0 120px;
+    max-width: 120px;
+    width: 120px;
+    margin-right: 24px;
+    @include screenMax($mobile) {
+      flex: 0 0 80px;
+      max-width: 80px;
+      width: 80px;
+      margin-right: 12px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    margin-right: 24px;
+  }
+
+  &__descr {
+    font-family: $primaryFontFamily;
+    font-size: 16px;
+    color: $colorPrimary;
+    margin-top: 12px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__title {
+    font-family: $secondaryFontFamily;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 8px;
+    @include screenMax($mobile) {
+      font-size: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-family: $primaryFontFamily;
+    font-size: 16px;
+    color: $colorText;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+  }
+
+  &__counts {
+    display: flex;
+    margin-top: 32px;
+    flex-wrap: wrap;
+
+    .count-item {
+      margin-bottom: 12px;
+
+      &:not(:last-child) {
+        margin-right: 46px;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.st-profile {
+  display: flex;
+  @include screenMax($mobile) {
+    flex-wrap: wrap;
+  }
+
+  &__descr {
+    flex: 0 0 350px;
+    max-width: 350px;
+    width: 350px;
+    @include screenMax($mobile) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    flex: 0 0 calc(100% - 350px);
+    max-width: calc(100% - 350px);
+    width: calc(100% - 350px);
+    padding-left: 46px;
+    @include screenMax($mobile) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+
+  &__switch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 62px;
+    @include screenMax($mobile) {
+      justify-content: center;
+      margin: 36px 0;
+    }
+
+    .st-switch {
+      margin: 0 30px;
+    }
+  }
+  &__cardWrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card-info {
+      flex: 0 0 48%;
+      max-width: 48%;
+      width: 48%;
+      margin-right: 4%;
+      @include screenMax($tablet) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0;
+      }
+
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.st-clipboard {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &__control {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 6px;
+    background: $colorBg;
+    padding: 4px;
+    border-radius: 6px;
+    line-height: 16px;
+    text-decoration: none;
+  }
+}
+
+.shared-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+  }
+
+  &__text {
+    font-family: $primaryFontFamily;
+    font-size: 14px;
+    color: $colorPrimary;
+    font-weight: 600;
+  }
+}
