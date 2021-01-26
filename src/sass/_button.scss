@@ -40,3 +40,19 @@
     color: $colorSecondary;
   }
 }
+
+.additional-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+  cursor: pointer;
+  text-decoration: none;
+  img {
+    max-width: 100%;
+    max-width: 100%;
+  }
+}

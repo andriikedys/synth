@@ -10,6 +10,7 @@
     }
   }
   &__content {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -28,6 +29,14 @@
       transition: all .3s;
       padding-top: 48px;
       display: block;
+    }
+    .additional-btn {
+      position: absolute;
+      right: 15px;
+      bottom: -32px;
+      @include screenMax($mobile) {
+        display: none;
+      }
     }
   }
   &__nav {
